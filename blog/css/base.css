@@ -1,0 +1,26 @@
+body{
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+
+}
+.none{
+	display: none !important;
+}
+.visually-hidden{
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	display: block;
+	margin-left: -10000px;
+	background: transparent;
+	font-size: 0;
+}
+/*Grid*/
+.container{
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}

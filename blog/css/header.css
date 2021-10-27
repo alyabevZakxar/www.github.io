@@ -1,0 +1,48 @@
+.header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	/*margin-bottom: 150px;*/
+}/*Фиксированная шапка*/
+.header:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #222831;
+	z-index: 2;
+}
+.header__body{
+	position: relative;
+	/*плашка для шапки. здесь нужно настроить z index*/
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+}
+
+.header__logo{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 30px;
+	color:#F05454;
+	position: relative;
+	z-index: 3;
+}
+
+
+
+@media screen and (max-width: 767px){
+	.header__logo{
+		font-size: 25px;
+	}
+	.header__body{
+		height: 50px;
+	}
+	body.lock{
+		overflow: hidden;
+	}
+}
